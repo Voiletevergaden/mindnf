@@ -1,0 +1,9 @@
+# In the table below, output for (A, B, C) = (1, 1, 0) lacks ("don't care").
+A B C X
+1 1 1 1
+1 0 1 0
+0 1 1 0
+0 1 0 0
+0 0 1 0
+1 0 0 1
+0 0 0 0
