@@ -37,3 +37,6 @@ In the truth table file, (A, B, C, X) = (1, 1, 0, ?) simply lacks. `mindnf` "don
 ## Truth table data
 
 For example, see the file [testtruthtable.txt](https://github.com/kmaed/mindnf/blob/master/testtruthtable.txt). The first line indicates the names of variables (several input variables and one output variable) and remaining lines indicate truth table. Since space characters are used as delimiters, the names of variables should not include space characters. If there is a # character at the begin of a line, the program ignores the line.
+
+## Contact
+Kazuki Maeda "kmaeda at kmaeda.net"
