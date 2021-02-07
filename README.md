@@ -1,6 +1,6 @@
 # Mindnf
 
-Mindnf finds minimal [disjunctive normal forms](https://en.wikipedia.org/wiki/Disjunctive_normal_form) for a given incomplete truth table. For this purpose, [Quine–McCluskey algorithm](https://en.wikipedia.org/wiki/Quine%E2%80%93McCluskey_algorithm) is well-known method. However, this algorithm so slow for the problem with a large number of variables and many "don't care" output values. Mindnf tries to find minimal DNFs fast by another simple method.
+Mindnf finds minimal [disjunctive normal forms](https://en.wikipedia.org/wiki/Disjunctive_normal_form) (DNF) for a given incomplete truth table. For this purpose, [Quine–McCluskey algorithm](https://en.wikipedia.org/wiki/Quine%E2%80%93McCluskey_algorithm) is well-known method. However, this algorithm so slow for the problem with a large number of variables and many "don't care" output values. Mindnf tries to find minimal DNFs fast by another simple method.
 
 ## Compile
 
@@ -17,7 +17,7 @@ Then the binary `mindnf` will be generated.
 
 Then the program find minimal DNF compatible with the truth table in &lt;truth table file&gt;.
 
-For example, the file [testtruthtable.txt](https://github.com/kmaed/mindnf/blob/master/testtruthtable.txt) is an incomplete truth table representing X=F(A, B, C):
+For example, the file [testtruthtable.txt](https://github.com/kmaed/mindnf/blob/master/testtruthtable.txt) is an incomplete truth table representing X = F(A, B, C):
 
 |A|B|C|X|
 |-|-|-|-|
@@ -30,7 +30,7 @@ For example, the file [testtruthtable.txt](https://github.com/kmaed/mindnf/blob/
 |1|0|0|1|
 |0|0|0|0|
 
-In the truth table file, (A, B, C, X) = (1, 1, 0, ?) simply lacks. `mindnf` "don't care" the output ? and finds DNFs with (i) the minimal number of conjunctions (prime implicants) and (ii) the minimal number of literals. In this case, we may find DNFs with two conjunctions and four literals:
+In the truth table file, (A, B, C, X) = (1, 1, 0, ?) simply lacks. `mindnf` "don't care" the output ? and finds DNFs with (i) the minimal number of conjunctions (prime implicants) and (ii) the minimal number of literals. In this case, we find a minimal DNF with two conjunctions and four literals:
 
     X = (A & B) | (A & ^C)
 
