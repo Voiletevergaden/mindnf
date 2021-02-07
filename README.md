@@ -1,6 +1,6 @@
 # Mindnf
 
-Mindnf finds minimal [disjunctive normal forms](https://en.wikipedia.org/wiki/Disjunctive_normal_form) (DNF) for a given incomplete truth table. For this purpose, [Quine–McCluskey algorithm](https://en.wikipedia.org/wiki/Quine%E2%80%93McCluskey_algorithm) is well-known method. However, this algorithm so slow for the problem with a large number of variables and many "don't care" output values. Mindnf tries to find minimal DNFs fast by another simple method.
+Mindnf finds minimal [disjunctive normal forms](https://en.wikipedia.org/wiki/Disjunctive_normal_form) (DNF) for a given incomplete truth table. For this purpose, [Quine–McCluskey algorithm](https://en.wikipedia.org/wiki/Quine%E2%80%93McCluskey_algorithm) is well-known method. However, this algorithm is so slow for the problem with a large number of variables and many "don't care" output values. Mindnf tries to find minimal DNFs fast by another simple method.
 
 ## Compile
 
