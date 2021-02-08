@@ -69,9 +69,9 @@ string impl2str(const bitset<dmaxnuminputs>& impl) {
 void findprimeimpl(){
   // For fast computation, we should use bitset to represent implicants.
   // Let x and bs be an implicant and the bitset corresponding to x:
-  // if x[n] ==  0, then bs[2*n] = 1 and bs[2*n+1] = 0;
-  //    x[n] ==  1, then bs[2*n] = 0 and bs[2*n+1] = 1;
-  //    x[n] == -1, then bs[2*n] = 1 and bs[2*n+1] = 1.
+  // if x[n] ==  0 (not xn), then bs[2*n] = 1 and bs[2*n+1] = 0;
+  //    x[n] ==  1 (    xn), then bs[2*n] = 0 and bs[2*n+1] = 1;
+  //    x[n] == -1 (xn = 1), then bs[2*n] = 1 and bs[2*n+1] = 1.
 
   // primeimpl[impl index][var index used above]
   primeimpl = vector<bitset<dmaxnuminputs>>();
@@ -106,7 +106,7 @@ void findprimeimpl(){
           primeimpl.push_back(t);
       }
     }
-  } while(bitset_d_decrement(t));
+  } while(bitset_d_decrement(t)); // for all implicants
 }
 
 // solve minimal cover problem
