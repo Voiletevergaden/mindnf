@@ -40,7 +40,7 @@ In the truth table file, (A, B, C, X) = (1, 1, 0, ?) simply lacks. `mindnf` "doe
 
     X = (A & B) | (A & ^C)
 
-Other data files are contained in [ciona](https://github.com/kmaed/mindnf/blob/master/ciona/) directory. These are experimental data of gene expression patterns in early embryos of ascidian ([*Ciona intestinalis* type A](https://en.wikipedia.org/wiki/Ciona_robusta)).
+Other example data files are contained in [ciona](https://github.com/kmaed/mindnf/blob/master/ciona/) directory. These are experimental data of gene expression patterns in early embryos of ascidian ([*Ciona intestinalis* type A](https://en.wikipedia.org/wiki/Ciona_robusta)).
 
 ## Truth table data
 
