@@ -36,7 +36,7 @@ For example, the file [testtruthtable.txt](https://github.com/kmaed/mindnf/blob/
 |1|0|0|1|
 |0|0|0|0|
 
-In the truth table file, (A, B, C, X) = (1, 1, 0, ?) simply lacks. `mindnf` "don't care" the output ? and finds DNFs with (i) the minimal number of conjunctions (prime implicants) and (ii) the minimal number of literals. In this case, we find a minimal DNF with two conjunctions and four literals:
+In the truth table file, (A, B, C, X) = (1, 1, 0, ?) simply lacks. `mindnf` "doesn't care" the output ? and finds DNFs with (i) the minimal number of conjunctions (prime implicants) and (ii) the minimal number of literals. In this case, we find a minimal DNF with two conjunctions and four literals:
 
     X = (A & B) | (A & ^C)
 
