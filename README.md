@@ -46,5 +46,9 @@ Other example data files are contained in [ciona](https://github.com/kmaed/mindn
 
 For example, see the file [testtruthtable.txt](https://github.com/kmaed/mindnf/blob/master/testtruthtable.txt). The first line indicates the names of variables (several input variables and one output variable) and remaining lines indicate truth table. Since space characters are used as delimiters, the names of variables should not include space characters. If there is a # character at the begin of a line, the program ignores the line.
 
+## Related works
+
+* [Miki Tokuoka, Kazuki Maeda, Kenji Kobayashi, Atsushi Mochizuki and Yutaka Satou, The gene regulatory system for specifying germ layers in early embryos of the simple chordate, Sci. Adv. 7 (2021) eabf8210](https://doi.org/10.1126/sciadv.abf8210).
+
 ## Contact
 Kazuki Maeda "kmaeda at kmaeda.net"
